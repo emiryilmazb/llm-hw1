@@ -244,3 +244,17 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# Traceback (most recent call last):
+#   File "F:\kod\llm-homework\hw1\3.py", line 246, in <module>
+#     main()
+#   File "F:\kod\llm-homework\hw1\3.py", line 217, in main
+#     valid_generator_auto = valid_datagen.flow_from_directory(
+#                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#   File "F:\kod\llm-homework\hw1\venv\Lib\site-packages\keras\src\legacy\preprocessing\image.py", line 1138, in flow_from_directory
+#     return DirectoryIterator(
+#            ^^^^^^^^^^^^^^^^^^
+#   File "F:\kod\llm-homework\hw1\venv\Lib\site-packages\keras\src\legacy\preprocessing\image.py", line 453, in __init__
+#     for subdir in sorted(os.listdir(directory)):
+#                          ^^^^^^^^^^^^^^^^^^^^^
+# FileNotFoundError: [WinError 3] Sistem belirtilen yolu bulamıyor: 'datasets/cars_dataset\\valid'
